@@ -1,2 +1,2 @@
 # shiroTesting
-A sample Java EE 7 application to demonstrate authentication with Apache Shiro
+A Java EE 7 + JSF sample application to demonstrate authentication with Apache Shiro
