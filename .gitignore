@@ -1,0 +1,46 @@
+# general
+.classpath
+.project
+.settings
+target-eclipse
+/target
+/target/*
+/target/*/*
+persistence.xml
+shiroTesting/src/main/webapp/WEB-INF/beans.xml
+
+
+# Maven
+pom.properties
+
+# idea
+.idea
+*.iml
+*.iws
+*.ipr
+/out
+
+# git
+*.orig
+
+*.DS_Store
+
+# database
+*.db
+
+# logs
+**/*.log
+*.log
+logs
+/bin
+
+# bin
+*.war
+*.jar
+
+# java
+*.class
+
+
+# generated css
+web-app/css/application.css
