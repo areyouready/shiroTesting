@@ -6,5 +6,12 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
     <h:outputLabel value="Hello, world"/>
+    <h:form>
+        <h:commandButton value="Logout via JSF action" id="logout" actionListener="#{logout.submit}" ajax="false" />
+    </h:form>
+
+    <form action="/shirotest/logout" method="get">
+        <button>Logout via automatic shiro.ini logout filter</button>
+    </form>
 </f:view>
 </html>
