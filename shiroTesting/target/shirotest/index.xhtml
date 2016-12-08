@@ -3,15 +3,20 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:shiro="http://shiro.apache.org/tags">
 <f:view>
     <h:outputLabel value="Hello, world"/>
+
+    <br />
+    <h:outputLabel rendered="#{jsfSecurityTools.subject.hasRole('root')}" value="foo" />
+    <h:outputLabel rendered="#{jsfSecurityTools.subject.hasRole('Users')}" value="bar" />
+
     <h:form>
-    <h:commandButton value="Logout via JSF action" id="logout" actionListener="#{logout.submit}" ajax="false" />
+        <h:commandButton value="Logout via JSF action" id="logout" actionListener="#{logout.submit}" ajax="false" />
     </h:form>
 
     <form action="/shirotest/logout" method="get">
-        <button>Logout vi automatic shiro.ini logout filter</button>
+        <button>Logout via automatic shiro.ini logout filter</button>
     </form>
 </f:view>
 </html>

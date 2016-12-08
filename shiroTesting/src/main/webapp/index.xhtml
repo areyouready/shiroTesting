@@ -6,6 +6,11 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
     <h:outputLabel value="Hello, world"/>
+
+    <br />
+    <h:outputLabel rendered="#{jsfSecurityTools.subject.hasRole('root')}" value="foo" />
+    <h:outputLabel rendered="#{jsfSecurityTools.subject.hasRole('Users')}" value="bar" />
+
     <h:form>
         <h:commandButton value="Logout via JSF action" id="logout" actionListener="#{logout.submit}" ajax="false" />
     </h:form>

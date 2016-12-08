@@ -19,10 +19,10 @@ public class Logout {
      * Shiro logout for the current user
      */
     public void submit() throws IOException {
-        SecurityUtils.getSubject().logout();
         final ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
+        SecurityUtils.getSubject().logout();
         externalContext.invalidateSession();  // cleanup user related session state
-        externalContext.redirect("login.xhtml");
+        externalContext.redirect("login.xhtml?faces-redirect=true");
     }
 
 }
