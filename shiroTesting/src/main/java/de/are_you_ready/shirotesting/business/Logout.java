@@ -1,4 +1,4 @@
-package de.are_you_ready.shirotesting.presentation;
+package de.are_you_ready.shirotesting.business;
 
 import org.apache.shiro.SecurityUtils;
 

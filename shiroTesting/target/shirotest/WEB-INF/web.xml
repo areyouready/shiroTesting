@@ -23,6 +23,7 @@
         <session-timeout>
             30
         </session-timeout>
+        <!--Removes JSessionID in URL after logout-->
         <tracking-mode>
             COOKIE
         </tracking-mode>
