@@ -3,6 +3,8 @@
 .project
 .settings
 target-eclipse
+/shiroTesting/target
+/shiroGen/target
 /target
 /target/*
 /target/*/*
