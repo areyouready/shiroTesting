@@ -26,5 +26,4 @@ public class Logout {
             externalContext.redirect("login.xhtml?faces-redirect=true");
         }
     }
-
 }
